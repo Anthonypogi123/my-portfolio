@@ -1,0 +1,119 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0a0f1c;
+        color: #e0e6ff;
+    }
+
+    .container {
+        text-align: center;
+        padding: 50px 35px;
+        border-radius: 16px;
+        width: 90%;
+        max-width: 480px;
+
+        background: rgba(10, 15, 28, 0.9);
+        border: 1px solid rgba(0, 183, 255, 0.2);
+
+        box-shadow: 
+            0 0 15px rgba(0, 183, 255, 0.2),
+            0 0 40px rgba(0, 183, 255, 0.1);
+    }
+
+    h1 {
+        font-size: 34px;
+        margin-bottom: 10px;
+        color: #00b7ff;
+
+        text-shadow:
+            0 0 5px #00b7ff,
+            0 0 15px rgba(0, 183, 255, 0.6);
+    }
+
+    h3 {
+        font-weight: 400;
+        margin-bottom: 20px;
+        opacity: 0.8;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+        opacity: 0.75;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 10px;
+        color: #00b7ff;
+        border: 1px solid #00b7ff;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 10px;
+        background: #00b7ff;
+        opacity: 0;
+        transition: 0.3s;
+        z-index: -1;
+    }
+
+    .btn:hover {
+        color: #0a0f1c;
+        box-shadow:
+            0 0 10px #00b7ff,
+            0 0 25px #00b7ff;
+    }
+
+    .btn:hover::before {
+        opacity: 1;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    
+    <h1>Mark Anthony Fernandez</h1>
+    <h3>ITE BSIT1 SOUTH 8</h3>
+
+    <p>
+        Welcome to my digital space. I create modern and clean designs with a focus on user experience and visual impact.
+        Explore my work and see how I bring ideas to life.
+    </p>
+
+    <!-- BUTTON -->
+    <a href="Fernandez_Anthony_Portfolio.pdf" target="_blank" class="btn">
+        Open Portfolio
+    </a>
+
+</div>
+
+</body>
+</html>
